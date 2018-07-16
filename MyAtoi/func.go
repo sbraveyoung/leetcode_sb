@@ -1,6 +1,7 @@
 package myAtoi
 
 import (
+	"math"
 	"strings"
 )
 
@@ -28,11 +29,11 @@ func myAtoi(str string) int {
 		if c < '0' || c > '9' {
 			return int(ret * positive)
 		}
-		if ret*10+m[c] > 2147483647 {
+		if ret*10+m[c] > math.MaxInt32 {
 			if positive == -1 {
-				return -2147483648
+				return math.MinInt32
 			}
-			return 2147483647
+			return math.MaxInt32
 		}
 		ret = ret*10 + m[c]
 	}
