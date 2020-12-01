@@ -46,13 +46,12 @@ func reorganizeString(S string) string {
 	res := make([]byte, len(S), len(S))
 	index := 0
 	for i := 0; len(array) != 0; i %= len(array) {
-		// fmt.Printf("%+v\n", array)
 		oldi := i
 		if array[i].count != 0 {
 			res[index] = byte(array[i].char)
 			index++
 			if i >= 1 {
-				maxIndex := i - 1
+				maxIndex := 0
 				if i+1 < len(array) && array[i+1].count > array[maxIndex].count {
 					maxIndex = i + 1
 				}

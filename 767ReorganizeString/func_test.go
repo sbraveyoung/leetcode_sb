@@ -12,55 +12,55 @@ func Test_reorganizeString(t *testing.T) {
 		want string
 	}{
 		// TODO: Add test cases.
-		//{
-		//	name: "first",
-		//	args: args{
-		//		S: "aab",
-		//	},
-		//	want: "aba",
-		//},
-		//{
-		//	name: "second",
-		//	args: args{
-		//		S: "aaab",
-		//	},
-		//	want: "",
-		//},
-		//{
-		//	name: "third",
-		//	args: args{
-		//		S: "aabbcc",
-		//	},
-		//	want: "abcabc",
-		//},
-		//{
-		//	name: "fourth",
-		//	args: args{
-		//		S: "abbbccd",
-		//	},
-		//	want: "bcbabcd",
-		//},
-		//{
-		//	name: "fifth",
-		//	args: args{
-		//		S: "abbbbcd",
-		//	},
-		//	want: "babcbdb",
-		//},
-		//{
-		//	name: "sixth",
-		//	args: args{
-		//		S: "abbbbbcd",
-		//	},
-		//	want: "",
-		//},
-		//{
-		//	name: "seventh",
-		//	args: args{
-		//		S: "kkkkzrkatkwpkkkktrq",
-		//	},
-		//	want: "krkrktktkakpkqkwkzk",
-		//},
+		{
+			name: "first",
+			args: args{
+				S: "aab",
+			},
+			want: "aba",
+		},
+		{
+			name: "second",
+			args: args{
+				S: "aaab",
+			},
+			want: "",
+		},
+		{
+			name: "third",
+			args: args{
+				S: "aabbcc",
+			},
+			want: "abcabc",
+		},
+		{
+			name: "fourth",
+			args: args{
+				S: "abbbccd",
+			},
+			want: "bcbabcd",
+		},
+		{
+			name: "fifth",
+			args: args{
+				S: "abbbbcd",
+			},
+			want: "babcbdb",
+		},
+		{
+			name: "sixth",
+			args: args{
+				S: "abbbbbcd",
+			},
+			want: "",
+		},
+		{
+			name: "seventh",
+			args: args{
+				S: "kkkkzrkatkwpkkkktrq",
+			},
+			want: "krkrktktkakpkqkwkzk",
+		},
 		{
 			name: "eights",
 			args: args{
